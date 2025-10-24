@@ -76,3 +76,17 @@ Joyce Koloando Coem<br/>
 Student Number: CT.2022.T0Q1Q9<br/>
 Eduvos – Mowbray Campus<br/>
 
+
+## ⚙️ Setup Instructions
+
+To run this project, copy and execute the SQL script below in **Oracle SQL Developer** or **SQL*Plus**.  
+Everything after this point is under one SQL block — from user creation to stored procedure execution.
+
+```sql
+-- ================================================================
+-- USER AND PRIVILEGES
+-- ================================================================
+CREATE USER ModiseCulturalFacility IDENTIFIED BY Eduvos#2025;
+GRANT CONNECT, RESOURCE TO ModiseCulturalFacility;
+GRANT UNLIMITED TABLESPACE TO ModiseCulturalFacility;
+EXIT;
