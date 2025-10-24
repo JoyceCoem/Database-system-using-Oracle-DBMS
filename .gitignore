@@ -1,0 +1,56 @@
+# Oracle SQL Developer
+*.jpr
+*.jws
+*.jdb
+*.jpx
+*.DS_Store
+
+# SQL Developer Connections
+connections.xml
+
+# Log files
+*.log
+*.trc
+*.lst
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# OS specific
+Thumbs.db
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Data Pump files
+*.dmp
+*.log
+
+# Export/Import files
+backup/
+exports/
+
+# Personal notes
+notes.txt
+todo.txt
+
+# Environment specific
+.env
+.env.local
+local_config.sql
+
+# Build artifacts
+build/
+dist/
+target/
