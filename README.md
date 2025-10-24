@@ -30,7 +30,22 @@ The database is implemented in **Oracle SQL** and demonstrates table creation, s
    cd Database-system-using-Oracle-dbms
 
 2. Open oracle_script.sql in Oracle SQL Developer.
-3. Run the script to:
+3. ## ⚙️ Setup Instructions
+
+To run this project, copy and execute the SQL script below in **Oracle SQL Developer** or **SQL*Plus**.  
+Everything after this point is under one SQL block — from user creation to stored procedure execution.
+
+```sql
+-- ================================================================
+-- USER AND PRIVILEGES
+-- ================================================================
+CREATE USER ModiseCulturalFacility IDENTIFIED BY Eduvos#2025;
+GRANT CONNECT, RESOURCE TO ModiseCulturalFacility;
+GRANT UNLIMITED TABLESPACE TO ModiseCulturalFacility;
+EXIT;
+```
+
+4. Run the script to:
 - Create a new user and grant privileges
 - Build all required tables and relationships
 - Create sequences for primary keys
@@ -77,16 +92,4 @@ Student Number: CT.2022.T0Q1Q9<br/>
 Eduvos – Mowbray Campus<br/>
 
 
-## ⚙️ Setup Instructions
 
-To run this project, copy and execute the SQL script below in **Oracle SQL Developer** or **SQL*Plus**.  
-Everything after this point is under one SQL block — from user creation to stored procedure execution.
-
-```sql
--- ================================================================
--- USER AND PRIVILEGES
--- ================================================================
-CREATE USER ModiseCulturalFacility IDENTIFIED BY Eduvos#2025;
-GRANT CONNECT, RESOURCE TO ModiseCulturalFacility;
-GRANT UNLIMITED TABLESPACE TO ModiseCulturalFacility;
-EXIT;
